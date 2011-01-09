@@ -1,0 +1,80 @@
+/* ----- Reset! Modified From: http://developer.yahoo.com/yui/reset ------ */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; }
+address,caption,cite,code,dfn,th,var { font-style: normal; font-weight: normal; }
+ol,ul { list-style: none; }
+caption,th { text-align: left; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal; }
+q:before,q:after { content: ''; }
+abbr,acronym { border: 0; }
+a { cursor:pointer; text-decoration: none; }
+a img { border: none; }
+.clear { clear: both; font-size: 1px; line-height: 1px; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.texthide { text-indent: -9999em; text-transform: capitalize; }
+
+
+/* ----- Everything Else for the Test ----- */
+
+body {
+  font: normal 13px/16px Calibri, Arial, sans-serif;
+  padding-top: 56px;
+}
+
+#header {
+  background: #fff;
+  height: 36px;
+  left: 0;
+  padding: 10px 10px 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -moz-box-shadow: 0 0 7px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.25);
+  box-shadow:  0 0 7px rgba(0,0,0,0.25);
+}
+#nav a {
+  background: #333;
+  color: #fff;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+#nav a:hover {
+  background: #555;
+}
+#nav a.active {
+  background: #e0e0e0;
+  color: #333;
+}
+#nav a.test {
+  color: #ff0000;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+#content-1 {
+  background: #e0e0e0;
+  height: 300px;
+  padding: 20px;
+}
+#content-2 {
+  background: #aaa;
+  height: 150px;
+  padding: 20px;
+}
+#content-3 {
+  background: #eee;
+  height: 200px;
+  padding: 20px;
+}
+#content-4 {
+  background: #ccc;
+  height: 900px;
+  padding: 20px;
+}
