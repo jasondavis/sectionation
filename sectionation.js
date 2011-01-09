@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var sections = $('.sectionable');
+  var sections = $('.sectionation');
   var sectionActive = 0;
   var nav = $('#nav a');
   var headerOffset = 70;
