@@ -1,3 +1,8 @@
+/*
+ * Sectionation v0.1
+ * http://github.com/nickawalsh/sectionation
+ */
+
 $(document).ready(function() {
   var sections = $('.sectionation');
   var sectionActive = 0;

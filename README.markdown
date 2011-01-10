@@ -1,3 +1,5 @@
+# Sectionation v0.1
+
 ## About
 
 Sectionation is a small jQuery plugin that allows a single page to be sectioned up, linking those sections to navigation. The navigation will auto-highlight based on which section the user has scrolled to, and clicking the navigation will animate scrolling to the top of that specific section.
