@@ -15,7 +15,7 @@ a img { border: none; }
 .texthide { text-indent: -9999em; text-transform: capitalize; }
 
 
-/* ----- Everything Else for the Test ----- */
+/* ----- Sample styles ----- */
 
 body {
   font: normal 13px/16px Calibri, Arial, sans-serif;
@@ -50,13 +50,19 @@ body {
   background: #e0e0e0;
   color: #333;
 }
-#nav a.test {
-  color: #ff0000;
-}
 
 h2 {
   font-size: 32px;
 }
+
+#footer {
+  padding: 20px;
+}
+#footer-nav a {
+  margin-right: 10px;
+}
+
+/* Content div styles are included only for visual purposes */
 
 #content-1 {
   background: #e0e0e0;
@@ -75,6 +81,6 @@ h2 {
 }
 #content-4 {
   background: #ccc;
-  height: 900px;
+  height: 700px;
   padding: 20px;
 }

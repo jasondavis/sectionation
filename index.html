@@ -4,7 +4,16 @@
     <title>Sectionation Test</title>
     <link type="text/css" rel="stylesheet" href="sample-style.css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-    <script type="text/javascript" src="sectionation.js"></script>
+    <script type="text/javascript" src="jquery.sectionation.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+         $('#nav a').sectionation({
+           extranav: ['#footer-nav a'],
+           footer: true,
+           offset: 70
+         });
+       });
+    </script>
   </head>
   
   <body>
@@ -17,20 +26,31 @@
       </div>
     </div>
     
+    <!-- The div containers are included for visual purposes, but are not necessary -->
+    
     <div id="content-1">
-      <h2 class="sectionation">Section 1</h2>
+      <h2 class="sectionation" id="section-1">Section 1</h2>
     </div>
     
     <div id="content-2">
-      <h2 class="sectionation">Section 2</h2>
+      <h2 class="sectionation" id="section-2">Section 2</h2>
     </div>
     
     <div id="content-3">
-      <h2 class="sectionation">Section 3</h2>
+      <h2 class="sectionation" id="section-3">Section 3</h2>
     </div>
     
     <div id="content-4">
-      <h2 class="sectionation">Section 4</h2>
+      <h2 class="sectionation" id="section-4">Section 4</h2>
+    </div>
+    
+    <div id="footer">
+      <div id="footer-nav">
+        <a href="#section-1">Section 1</a>
+        <a href="#section-2">Section 2</a>
+        <a href="#section-3">Section 3</a>
+        <a href="#section-4">Section 4</a>
+      </div>
     </div>
   </body>
 </html>
