@@ -27,7 +27,6 @@
  */
 
 (function($){
-
   $.fn.sectionation = function(userOptions) {
     var options = $.extend({}, $.fn.sectionation.defaults, userOptions);
     var $this = $(this);
@@ -38,7 +37,7 @@
     function highlight() {
       var dft = $(window).scrollTop();
       var active = compare(dft);
-      $this.not($this[active]).removeClass(options.active);
+      $this.removeClass(options.active);
       $this.eq(active).addClass(options.active);
     }
     highlight();
@@ -63,14 +62,14 @@
     
     $.each(navs, function(index, value) {
       var nav = $(value);
-      nav.bind('click.sectionation', function() {
+      nav.bind('click.sectionation', function(e) {
         if( nav.index($(this)) == 0 ) {
-          $('html,body').animate({scrollTop:0}, options.speed);
+          $('html,body').animate({ scrollTop:0 }, options.speed);
         } else {
-          var scrollTo = sections.eq(nav.index($(this))).offset().top - options.offset;
-          $('html,body').animate({scrollTop:scrollTo}, options.speed);
+          var scrollTo = sections.eq( nav.index($(this)) ).offset().top - options.offset;
+          $('html,body').animate({ scrollTop:scrollTo }, options.speed);
         }
-        return false;
+        e.preventDefault();
       });
     });
   };
@@ -83,5 +82,4 @@
     selector: '.sectionation',
     speed: 700
   }
-  
 })(jQuery);
