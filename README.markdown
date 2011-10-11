@@ -6,7 +6,7 @@ Sectionation is a small jQuery plugin that allows a single page to be sectioned 
 
 ## Usage
 
-Working to update this section for v0.2. A demo is available at: [nickwalsh.net/sectionation](http://nickwalsh.net/sectionation).
+Working to update this section for v0.2. A demo is available at: [nick-walsh.com/sectionation](http://www.nick-walsh.com/sectionation).
 
 ## Compatibility
 
